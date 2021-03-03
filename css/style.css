@@ -1,8 +1,25 @@
+/* Основной цвет текста #757575 */
+/* Вторичный цвет текста #212121 */
+/* Синий цвет #2196F3 */
+/* Белый цвет #FFFFFF */
+/* Цвет ссылок футера rgba(255, 255, 255, 0.6) */
+/* Вторичный цвет фона #F5F4FA */
+
+:root {
+  --primary-text-color: #757575;
+  --primary-section-text-color: #ffffff;
+  --primary-section-background-color: #2f303a;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-background-color: #e5e5e5;
+}
+
 body {
-  /* Основной цвет текста #212121 */
-  color: #212121;
-  /* Основной цвет фона */
-  background-color: #e5e5e5;
+  /* Основной цвет текста #757575 */
+  color: var(--primary-text-color);
+
+  /* Основной цвет фона #e5e5e5 */
+  background-color: var(primary-background-color);
 }
 /* Убираем маркеры из списков */
 ul {
@@ -13,26 +30,48 @@ ul {
 .logo-header {
   color: #000000; /* Черный цвет логотипа #000000 */
 }
+.logo-header:hover,
+.logo-header:focus {
+  color: rgb(140, 0, 255);
+}
 /* Навигация */
 
 .site-nav .link {
-  color: currentColor;
+  color: var(--title-text-color); /* Вторичный цвет текста #212121 */
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: #2196f3;
+  color: var(--accent-color); /* Синий цвет #2196F3 */
+}
+/* Активная страница */
+.site-nav .link.current {
+  color: var(--accent-color);
 }
 /* Коммуникация */
 .communication-header .link {
-  color: #757575; /* Вторичный цвет текста #757575 */
+  color: currentColor;
 }
 .communication-header .link:hover,
 .communication-header .link:focus {
-  color: #2196f3;
+  color: var(--accent-color); /* Синий цвет #2196F3 */
 }
 
-/* Вторичный цвет текста #757575 */
-/* Синий цвет #2196F3 */
-/* Белый цвет #FFFFFF */
-/* Цвет ссылок футера rgba(255, 255, 255, 0.6) */
-/* Вторичный цвет фона #F5F4FA */
+/* Основная секця */
+.primary {
+  color: var(--primary-section-text-color);
+  background-color: var(--primary-section-background-color);
+}
+.primary > .button {
+  color: currentColor;
+  background-color: var(--accent-color);
+}
+
+/* Общее для секций */
+.section-title {
+  color: var(--title-text-color); /* Вторичный цвет текста #212121 */
+}
+.section-list {
+  color: var(--title-text-color); /* Вторичный цвет текста #212121 */
+}
+
+/* Подвал сайта */
