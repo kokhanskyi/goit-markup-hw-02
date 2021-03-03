@@ -1,3 +1,38 @@
 body {
-  background-color: tomato;
+  /* Основной цвет текста #212121 */
+  color: #212121;
+  /* Основной цвет фона */
+  background-color: #e5e5e5;
 }
+/* Убираем маркеры из списков */
+ul {
+  list-style: none;
+}
+/* Логотип в шапке */
+
+.logo-header {
+  color: #000000; /* Черный цвет логотипа #000000 */
+}
+/* Навигация */
+
+.site-nav .link {
+  color: currentColor;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #2196f3;
+}
+/* Коммуникация */
+.communication-header .link {
+  color: #757575; /* Вторичный цвет текста #757575 */
+}
+.communication-header .link:hover,
+.communication-header .link:focus {
+  color: #2196f3;
+}
+
+/* Вторичный цвет текста #757575 */
+/* Синий цвет #2196F3 */
+/* Белый цвет #FFFFFF */
+/* Цвет ссылок футера rgba(255, 255, 255, 0.6) */
+/* Вторичный цвет фона #F5F4FA */
