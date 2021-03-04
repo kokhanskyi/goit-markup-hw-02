@@ -9,10 +9,16 @@
   --primary-text-color: #757575;
   --primary-section-text-color: #ffffff;
   --primary-section-background-color: #2f303a;
+  --footer-section-background-color: #2f303a;
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-background-color: #e5e5e5;
+  --header-background-color: #ffffff;
   --second-background-color: #f5f4fa;
+  --logo-accent-color: #8c00ff;
+  --logo-header-color: #000000;
+  --logo-footer-color: #ffffff;
+  --communication-footer-color: rgb(255, 255, 255, 0.6);
 }
 
 body {
@@ -26,14 +32,18 @@ body {
 ul {
   list-style: none;
 }
+/* Шапка сайта */
+.page-header {
+  background-color: var(--header-background-color);
+}
 /* Логотип в шапке */
 
 .logo-header {
-  color: #000000; /* Черный цвет логотипа #000000 */
+  color: var(--logo-header-color); /* Черный цвет логотипа #000000 */
 }
 .logo-header:hover,
 .logo-header:focus {
-  color: rgb(140, 0, 255);
+  color: var(--logo-accent-color);
 }
 /* Навигация */
 
@@ -48,7 +58,7 @@ ul {
 .site-nav .link.current {
   color: var(--accent-color);
 }
-/* Коммуникация */
+/* Коммуникация (шапка) */
 .communication-header .link {
   color: currentColor;
 }
@@ -95,3 +105,25 @@ ul {
   background-color: var(--accent-color);
 }
 /* Подвал сайта */
+footer {
+  color: var(--logo-footer-color);
+  background-color: var(--footer-section-background-color);
+}
+
+/* Логотип в подвале */
+.logo-footer {
+  color: var(--logo-footer-color);
+}
+.logo-footer:hover,
+.logo-footer:focus {
+  color: var(--logo-accent-color);
+}
+
+/* Коммуникация (подвал) */
+.communication-footer .link {
+  color: var(--communication-footer-color);
+}
+.communication-footer .link:hover,
+.communication-footer .link:focus {
+  color: var(--accent-color); /* Синий цвет #2196F3 */
+}
