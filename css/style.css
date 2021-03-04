@@ -12,6 +12,7 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-background-color: #e5e5e5;
+  --second-background-color: #f5f4fa;
 }
 
 body {
@@ -61,10 +62,7 @@ ul {
   color: var(--primary-section-text-color);
   background-color: var(--primary-section-background-color);
 }
-.primary > .button {
-  color: currentColor;
-  background-color: var(--accent-color);
-}
+/* Свойство Кнопки (button)смотри в разделе "Кнопкм" */
 
 /* Общее для секций */
 .section-title {
@@ -74,4 +72,26 @@ ul {
   color: var(--title-text-color); /* Вторичный цвет текста #212121 */
 }
 
+/* Кнопки */
+.button {
+  cursor: pointer;
+}
+.primary > .button {
+  color: currentColor;
+  background-color: var(--accent-color);
+}
+.primary > .button:hover,
+.primary > .button:focus {
+  color: var(--title-text-color);
+  background-color: var(--second-background-color);
+}
+.filters .button {
+  color: var(title-text-color);
+  background-color: var(second-background-colorolor);
+}
+.filters .button:hover,
+.filters .button:focus {
+  color: var(--primary-section-text-color);
+  background-color: var(--accent-color);
+}
 /* Подвал сайта */
