@@ -60,6 +60,7 @@ ul {
 
 .site-nav .link {
   color: var(--title-text-color); /* Вторичный цвет текста #212121 */
+  text-decoration: none;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
