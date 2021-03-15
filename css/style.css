@@ -208,10 +208,10 @@ footer {
 .logo-footer > span {
   color: var(--accent-color);
 }
-.address > p {
+.address {
   font-size: 14px;
+  font-style: normal;
   line-height: 1.71;
-  text-decoration: none;
 }
 /* Коммуникация (подвал) */
 .communication-footer .link {
